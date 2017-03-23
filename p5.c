@@ -15,8 +15,9 @@ BYTE horas=0; /*horas*/
 
 void main(){
 	Timer_Ini(); /* inicialzaTimer de 1 segundo */
+	DisplayClock();
 	pokeb(0,0xFFFF,0);
-	SetClock(23,59,0);
+	/*SetClock(23,59,0);*/
 	while(1){
 		/* Verificación para actualizar el reloj */
 		if(TimerSecFlag() ==1){ /* Ha pasado un segundo? */
