@@ -9,9 +9,9 @@ void PrintDec2d( BYTE );
 void SetClock(BYTE hora, BYTE minutos, BYTE segundos);
 void UpdateClock( void );
 
-BYTE seg=0; /* para el manejo de los segundos */
-BYTE min=0; /*minutos*/
-BYTE horas=0; /*horas*/
+BYTE seg=50; /* para el manejo de los segundos */
+BYTE min=59; /*minutos*/
+BYTE horas=23; /*horas*/
 
 void main(){
 	Timer_Ini(); /* inicialzaTimer de 1 segundo */
